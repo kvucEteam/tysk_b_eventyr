@@ -1,0 +1,90 @@
+body {
+	font-family: verdana;
+	padding: 0px;
+	background-color: white;
+	line-height: 1.3;
+	font-size: 14px !important;
+	font-weight: normal;
+	color: #121212 !important;
+	
+	width: 660px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#canvas {
+	background-color: white;
+	/* background-image: url('tegning_ulv.png'); */
+	background-repeat: no-repeat;
+	width: 660px;
+	height: 661px;
+	margin-top:0px;
+}
+.txtfield {
+	opacity: .9;
+	text-align: center;
+	font-family: verdana;
+	cursor: pointer;
+	background-color:black; 
+	color:white;
+	border-color:#881326;
+}
+.txtcomp {
+	position: absolute;
+	background-color: white;
+	opacity: 1;
+	font-family: verdana;
+	color: green;
+	height: 30px;
+}
+.txtfield_container {
+	position: absolute;
+	opacity: .9;
+	font-family: verdana;
+	display: inline;
+	white-space: nowrap;
+}
+#hint {
+	position: absolute;
+	font-family: verdana;
+	display: inline;
+	top: 550px;
+	left: 520px;
+	font-size: 14px;
+	width: 130px;
+	cursor: pointer;
+}
+#submit {
+	position: absolute;
+	font-family: verdana;
+	display: inline;
+	top: 580px;
+	left: 520px;
+	width: 130px;
+	font-size: 14px;
+	cursor: pointer;
+}
+#container {
+	position: absolute;
+	top: 0px;
+}
+.p {
+	display: inline;
+	color: white;
+	text-align: center;
+	font-size: 9px;
+	position: absolute;
+	top: 24px;
+	left: 2px;
+	background-color: #5F5959;
+}
+img {
+	display: inline;
+}
+
+#ost{
+	background-color:white; 
+	width:auto; 
+	position: absolute; 
+}

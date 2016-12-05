@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript">
+			var flippingTime = 1800;
+			var card1 = 0;
+			var card2 = 0;
+			var flipable = 1;
+			$(document).ready(function() {
+				$(".card").click(function() {
+					if (flipable == 1 && $(this).hasClass('clickable')) {
+						if (card1 == 0) {
+							card1 = $(this).attr('name');
+							flip(card1);
+	//						alert(card1 + " - " + card2);
+						} else {
+							if (card1 == $(this).attr('name')) {
+							} else {
+								card2 = $(this).attr('name');
+								flip(card2);
+		//						alert(card1 + " - " + card2);
+								if (
+									(card1 == 01 && card2 == 15) ||
+									(card1 == 15 && card2 == 01) ||
+									
+									(card1 == 02 && card2 == 06) ||
+									(card1 == 06 && card2 == 02) ||
+									
+									(card1 == 03 && card2 == 14) ||
+									(card1 == 14 && card2 == 03) ||
+									
+									(card1 == 04 && card2 == 11) ||
+									(card1 == 11 && card2 == 04) ||
+									
+									(card1 == 05 && card2 == 08) ||
+									(card1 == 08 && card2 == 05) ||
+									
+									(card1 == 07 && card2 == 09) ||
+									(card1 == 09 && card2 == 07) ||
+									
+									(card1 == 10 && card2 == 16) ||
+									(card1 == 16 && card2 == 10) ||
+									
+									(card1 == 12 && card2 == 13) ||
+									(card1 == 13 && card2 == 12)
+								) {
+									$("[name='"+card1+"']").removeClass('clickable');
+									$("[name='"+card2+"']").removeClass('clickable');
+								} 
+								else {
+									backflip(card1);
+									backflip(card2);
+									flipable = 0;
+									resetFlipable();
+								};
+								card1 = 0;
+								card2 = 0;
+							}
+						}
+					}
+				});
+			});
+			function flip(card) {
+				$(document).find($(".front"))[card-1].style.width = "0%"; // Ny måde at kalde kortet der klikkes på på. (Den gamle måde [bedre, men virker ikke i IE], er kommenterert ud.)
+//				document.getElementsByName(card)[0].childNodes[1].childNodes[1].style.width = "0%"
+				setTimeout(function() {
+				$(document).find($(".back"))[card-1].style.width = "100%";
+//				document.getElementsByName(card)[0].childNodes[1].childNodes[3].style.width = "100%"
+				}, 100);
+			};
+			function backflip(card) {
+				setTimeout(function() {
+				$(document).find($(".front"))[card-1].style.width = "100%";
+//				document.getElementsByName(card)[0].childNodes[1].childNodes[1].style.width = "100%"
+				}, flippingTime + 100);
+				setTimeout(function() {
+				$(document).find($(".back"))[card-1].style.width = "0%";
+//				document.getElementsByName(card)[0].childNodes[1].childNodes[3].style.width = "0%"
+				}, flippingTime);
+			};
+			function resetFlipable() {
+				setTimeout(function() {
+				flipable = 1;
+				}, flippingTime);
+			};
+		</script>
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Chris Toft Christensen</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:Order msdt:dt="string">4100.00000000000</mso:Order>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:PublishingStartDate msdt:dt="string"></mso:PublishingStartDate>
+<mso:PublishingExpirationDate msdt:dt="string"></mso:PublishingExpirationDate>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Chris Toft Christensen</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x01010079088A4D02E1D04799A9C088ACD2B2E4</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+	<body>
+		<div id="container">
+			<div class="card clickable de" name="01">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>Treffen</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable da" name="02">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>At falde i søvn</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable da" name="03">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>At snorke</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable de" name="04">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>Schneiden</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable da" name="05">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>At æde</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable de" name="06">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>Einschlafen</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable de" name="07">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>Sprechen</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable de" name="08">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>Fressen</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable da" name="09">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>At tale</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable da" name="10">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>At tage (tøj) på</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable da" name="11">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>At skære</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable de" name="12">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>Fragen</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable da" name="13">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>At spørge</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable de" name="14">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>Schnarchen</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable da" name="15">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>At møde</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card clickable de" name="16">
+				<div>
+					<div class="face front">
+						<div class="border">
+							<p>?</p>
+						</div>
+					</div>
+					<div class="face back">
+						<div class="border">
+							<p>Anziehen</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

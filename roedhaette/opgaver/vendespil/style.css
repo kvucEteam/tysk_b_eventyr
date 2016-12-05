@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+p {
+	font: 100 1em/1.2em verdana, Arial, Helvetica, Geneva, sans-serif;
+	text-shadow: -1px -1px 0px rgba(255, 255, 255, .5);
+	padding: 3px;
+}
+#container {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+/*	padding: 20px;*/
+}
+.card {
+/*	background: lightgreen;*/
+	height: 25%;
+	width: 25%;
+	border: 3px solid rgba(255, 255, 255, .1);
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+}
+.card>div {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.card>div>div {
+	background: #DAD8D8;
+}
+.face {
+	background: #f5f5f5;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	box-shadow: 1px 1px 0px rgba(0, 0, 0, .2)/*, inset 1px 1px 0px rgba(255, 255, 255, .5)*/;
+	border-radius: 10px;
+	
+	-webkit-transition: width .1s ease-in-out 0s, background .1s ease-in-out 0s;
+	-moz-transition: width .1s ease-in-out 0s, background .1s ease-in-out 0s;
+	transition: width .1s ease-in-out 0s, background .1s ease-in-out 0s;
+}
+.clickable div div {
+	cursor: pointer;
+}
+.clickable div div:active {
+	box-shadow:inset 1px 1px 1px rgba(0, 0, 0, .1);
+}
+.front {
+	z-index: 10;
+	width: 100%;
+}
+.back {
+	width: 0%;
+}
+.back p {
+	font-size: 1em;
+}
+.front p {
+/*	background: blue;*/
+	font-size: 3em;
+}
+.border {
+	height: 89%;
+	width: 89%;
+	margin: 6%;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 7px;
+	display: table;
+	
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+	box-shadow: 1px 1px 0px rgba(255, 255, 255, .5), 1px 1px 0px rgba(255, 255, 255, .5) inset;
+}
+.border p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: rgba(0, 0, 0, .8s);
+}
+.clickable.da .front, .clickable.da .back {
+	background: rgb(140, 50, 74);
+}
+.clickable.da .border {
+	box-shadow: 1px 1px 0px rgba(255, 255, 255, .2), 1px 1px 0px rgba(255, 255, 255, .2) inset;
+}
+.clickable.da p {
+	text-shadow: -1px -1px 0px rgba(255, 255, 255, .2);
+}
+.clickable.de .front, .clickable.de .back {
+	background: rgb(235, 222, 169);
+}
+.clickable.de .border {
+	box-shadow: 1px 1px 0px rgba(255, 255, 255, .5), 1px 1px 0px rgba(255, 255, 255, .5) inset;
+}
+.clickable.de p {
+	text-shadow: -1px -1px 0px rgba(255, 255, 255, .5);
+}

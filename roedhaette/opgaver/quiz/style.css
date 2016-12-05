@@ -1,0 +1,193 @@
+body{
+	background-color: #e2e0e1 !important;
+	color: #000000 !important;
+	font-family: "verdana", sans-serif !important;
+}
+
+h2 {
+	font-size: 16px !important;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 14px !important;
+	font-weight: normal;
+	color: #000000 !important;
+}
+
+table, div, span, td {
+    color: #000000 !important;
+}
+
+.ExerciseTitle {
+	color: #000000 !important;
+	line-height: 1em !important;
+}
+
+.ExerciseSubtitle {
+	color: #000000 !important;
+	line-height: 1em !important;
+}
+
+#Instructions {
+	color: #5490cc !important;
+	font-size: 14px;
+}
+#InstructionsDiv {
+	background-color: white !important;
+}
+
+#ReadingDiv {
+	color: #000000 !important;
+	font-size: 13px !important;
+}
+
+.QuizQuestions {
+	color: #000000 !important;
+}
+
+.QuizQuestion {
+	border: 0 hidden !important;
+}
+
+.QuestionText {
+	color: #000000 !important;
+}
+
+div.NavButtonBar{
+	background-color: transparent !important;
+}
+
+.NavButton, .FuncButton {
+	border: 1px solid #000000 !important;
+	/*	
+	border-left-color: #cadced !important;
+	border-top-color: #cadced !important;
+	border-right-color: #4a5c6d !important;
+	border-bottom-color: #4a5c6d !important;
+	*/
+	background-color: #4e615b !important;
+	color: #FFFFFF !important;
+	cursor: pointer !important;
+	font-size: 14px !important;
+	margin-bottom: 5px;
+}
+
+.NavButtonUp, .FuncButtonUp {
+	border: 1px solid #000000 !important;
+	/*
+	border-left-color: #cadced !important;
+	border-top-color: #cadced !important;
+	border-right-color: #4a5c6d !important;
+	border-bottom-color: #4a5c6d !important;
+	*/
+	color: #FFFFFF !important;
+	background-color: #989797 !important;
+	cursor: pointer !important;
+	font-size: 14px !important;	
+	margin-bottom: 5px;
+}
+
+.NavButtonDown, .FuncButtonDown {
+	border: 1px solid #000000 !important;
+	/*
+	border-left-color: #4a5c6d !important;
+	border-top-color: #4a5c6d !important;
+	border-right-color: #cadced !important;
+	border-bottom-color: #cadced !important;
+	*/
+	color: #FFFFFF !important;
+	background-color: #4e615b !important;
+	cursor: pointer !important;
+	font-size: 14px !important;
+	margin-bottom: 5px;
+}
+
+div.StdDiv{
+	background-color: white !important;
+	text-align: center !important;
+	font-size: 100% !important;
+	color: #000000	 !important;
+	padding: 1em !important;
+	margin: 13px;
+	border: 1px solid #919090 !important;
+	margin-bottom: 4px !important;
+}
+
+div.Feedback {
+    background-color: #FFFFFF !important;
+    border: 1px solid #4B5D6E !important;
+	-webkit-box-shadow: 5px 5px 15px rgba(0,0,0, .4) !important;
+	-moz-box-shadow: 5px 5px 15px rgba(0,0,0, .4) !important;
+	box-shadow: 5px 5px 15px rgba(0,0,0, .4) !important;
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer {
+    color: black !important;
+}
+
+#FeedbackOKButton {
+	font-size: 16px !important;
+}
+
+#WordList {
+	color: #96776C !important;
+}
+
+.ClozeBody {
+	font-size:13px !important;
+	color: #898485 !important;
+}
+
+div.LeftContainer {
+	float: none !important;
+	width: auto !important;
+}
+
+div.RightContainer {
+	float: none !important;
+	width: auto !important;
+}
+
+a.ExSegment {
+	color: #96776C !important;
+}
+
+/*Picture-thing*/
+
+div.CardStyle {
+    background-color: #95B9DB !important;
+    border: 1px solid #4B5D6E !important;
+}
+
+/*Crosswords*/
+
+table.CrosswordGrid td.BlankCell {
+    background-color: #96776C !important;
+}
+
+table.CrosswordGrid tbody tr td {
+    border: 1px solid #96776C !important;
+    height: 1.5em !important;
+    width: 1.5em !important;
+}
+
+.GridNum {
+    font-size: 50% !important;
+    font-weight: 100 !important;
+}
+
+table.CrosswordGrid td.NumLetterCell {
+    font-weight: 100 !important;
+	background-color: #FCF7F5 !important;
+}
+
+table.CrosswordGrid td.LetterOnlyCell {
+    font-weight: 100 !important;
+	background-color: #FCF7F5 !important;
+}
+
+/* Drop down */
+select {
+    color: #898485 !important;
+}
