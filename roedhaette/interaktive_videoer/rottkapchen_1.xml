@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<wrap>
+	<video
+	videoId = "aKpT0_OKVVQ"
+	hojde ="371"
+	bredde = "660"
+	length = "4:03"
+	></video>
+	<runde
+	timestamp = "73"
+	>
+		<spm
+		tekst="Wie heißt das Mädchen?"
+		korrekt ="0"
+		>
+			<svar value="Rotkäppchen"/>
+			<svar value="Aschenputtel"/>
+			<svar value="Schneewittchen"/>
+		</spm>
+	</runde>
+	<runde
+	timestamp = "87"
+	>
+
+		<spm
+		tekst="Von wem hat sie die Kappe bekommen?"
+		korrekt ="2"
+		>
+			<svar value="Von der Mutter"/>
+			<svar value="Von dem Vater"/>
+			<svar value="Von der Großmutter"/>
+		</spm>
+	</runde>
+	<runde
+	timestamp = "153"
+	>
+		<spm
+		tekst="Was antwortet Rotkäppchen?"
+		korrekt ="0"
+		>
+			<svar value="Nein, das will ich nicht."/>
+			<svar value="Ja, das will ich."/>
+		</spm>
+	</runde>
+	<runde
+	timestamp = "196"
+	>
+		<spm
+		tekst="Hat sie Angst vor dem Wolf?"
+		korrekt ="1"
+		>
+			<svar value="Ja"/>
+			<svar value="Nein"/>
+		</spm>
+	</runde>
+</wrap>

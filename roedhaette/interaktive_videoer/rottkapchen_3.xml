@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<wrap>
+	<video
+	videoId = "HEofrPNlnDI"
+	hojde ="371"
+	bredde = "660"
+	length = "2:34"
+	></video>
+	<runde
+	timestamp = "27"
+	>
+		<spm
+		tekst="Was tut der Wolf?"
+		korrekt ="0"
+		>
+			<svar value="Der Wolf schnarcht"/>
+			<svar value="Der Wolf schmatzt"/>
+			<svar value="Der Wolf erzählt der Großmutter ein Märchen"/>
+		</spm>
+	</runde>
+	<runde
+	timestamp = "67"
+	>
+
+		<spm
+		tekst="Erschießt der Jäger den Wolf?"
+		korrekt ="1"
+		>
+			<svar value="Ja, der Jäger erschießt den Wolf"/>
+			<svar value="Nein, der Jäger erschießt den Wolf nicht"/>
+		</spm>
+	</runde>
+	<runde
+	timestamp = "130"
+	>
+		<spm
+		tekst="Was tut Rotkäppchen mit den großen Steinen?"
+		korrekt ="1"
+		>
+			<svar value="Rotkäppchen baut sich ein neues Haus"/>
+			<svar value="Rotkäppchen legt sie in den Bauch des Wolfes"/>
+		</spm>
+	</runde>
+	
+</wrap>
